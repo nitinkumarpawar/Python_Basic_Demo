@@ -4,11 +4,21 @@ def log(msg):
     file.close()
 
 try:
-    for i in range(1, 11):
+    num = int(input("Enter the number: "))
+    for i in range(1, num+1):
         if i % 2 == 0:
             print(str("Even number: ") + str(i))
-except Exception as e:
+except NameError as e:
     log(str(e))
-    print("Some error")
+    print("This is NameError")
+except ValueError as e:
+    log(str(e))
+    print("Invalid value as input")
+except Exception as e:
+    try:
+        log(str(e))
+        print("Some error")
+    except Exception as e:
+        print("Some error while logging error")
 finally:
     print("End of the code")

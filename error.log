@@ -1,1 +1,4 @@
-name 'prin' is not definedname 'prin' is not definedinteger modulo by zero
+name 'prin' is not defined
+integer modulo by zero
+name 'prin' is not defined
+invalid literal for int() with base 10: 'nk'

@@ -1,5 +1,5 @@
 def log(msg):
-    file = open("./error.log","a")
+    file = open("error.log", "a")
     file.write(msg+"\n")
     file.close()
 
